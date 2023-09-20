@@ -1,6 +1,10 @@
 export declare namespace JSX {
     interface IntrinsicElements {
         [elemName: string]: any
+        "m:use": {
+            src: string,
+            raw?: boolean,
+        }
     }
     interface ElementAttributesProperty {
         props: any;
@@ -23,6 +27,30 @@ type Factory<T> =
             return tag(att)
 
         if (typeof tag == "string") {
+            if (tag == "m:importMap") {
+                return ``
+                    +`<script type="importmap">`
+                    +Deno.readTextFileSync(att.src)
+                    +`</script>`
+            }
+            if (tag =="m:use") {
+                if (att.src.endsWith(".css")) {
+                    return ``
+                        +`<link rel="stylesheet" `
+                        +`href="${att.src}" `
+                        +`type="text/css"></link>`
+                }
+                if (att.raw) {
+                    return ``
+                        +`<script type="module">`
+                        +Deno.readTextFileSync(att.src)
+                        +`</script>`
+                }
+                return ``
+                    +`<script type="module" `
+                    +`src="${att.src}"`
+                    +`></script>`
+            }
             let { children } = att
             if (!children) children = []
             if (!Array.isArray(children)) children = [children]
@@ -36,7 +64,7 @@ type Factory<T> =
             return ``
                 +`<${tag} ${props}>`
                 +`${children.join("")}`
-                +`<${tag}/>`
+                +`</${tag}>`
         }
         return ""
     }

@@ -1,0 +1,53 @@
+<html lang="en"><head ><script type="importmap">{
+  "imports": {
+    "jsx/jsx-runtime": "../../src/jsx.ts",
+    "@codemirror/commands": "https://esm.sh/v132/*@codemirror/commands@6.2.5",
+    "@codemirror/view": "https://esm.sh/v132/*@codemirror/view@6.19.0",
+    "adorable-css": "https://esm.sh/v132/*adorable-css@1.5.2",
+    "adorable-css/": "https://esm.sh/v132/*adorable-css@1.5.2/",
+    "codemirror": "https://esm.sh/v132/*codemirror@6.0.1",
+    "css-paint-polyfill": "https://esm.sh/v132/css-paint-polyfill@3.4.0",
+    "preact/jsx-runtime": "https://esm.sh/v132/preact@10.17.1/jsx-runtime"
+  },
+  "scopes": {
+    "https://esm.sh/v132/": {
+      "@codemirror/autocomplete": "https://esm.sh/v132/@codemirror/autocomplete@6.9.1",
+      "@codemirror/language": "https://esm.sh/v132/@codemirror/language@6.9.0",
+      "@codemirror/lint": "https://esm.sh/v132/@codemirror/lint@6.4.2",
+      "@codemirror/search": "https://esm.sh/v132/@codemirror/search@6.5.3",
+      "@codemirror/state": "https://esm.sh/v132/@codemirror/state@6.2.1",
+      "@lezer/common": "https://esm.sh/v132/@lezer/common@1.1.0",
+      "style-mod": "https://esm.sh/v132/style-mod@4.1.0",
+      "tsup": "https://esm.sh/v132/tsup@7.2.0",
+      "w3c-keyname": "https://esm.sh/v132/w3c-keyname@2.2.8"
+    }
+  }
+}</script><script type="module">import { basicSetup } from "codemirror"
+import { EditorView, keymap } from "@codemirror/view"
+import { indentWithTab } from "@codemirror/commands"
+
+const editor = new EditorView({
+    extensions: [
+        basicSetup,
+        keymap.of([indentWithTab]),
+        EditorView.theme({
+        "&": {
+            color: "white",
+            backgroundColor: "black",
+        },
+        "&.cm-focused .cm-cursor": {
+            borderLeftColor: "white"
+        },
+        }, {dark: true})
+    ],
+    parent: document.querySelector("editor"),
+})
+
+import "adorable-css"
+</script><link rel="stylesheet" href="./src/global.css" type="text/css"></link><script type="module">if (!("paintWorklet" in CSS)) {
+    await import("css-paint-polyfill")
+}
+
+CSS.paintWorklet.addModule(
+    `https://www.unpkg.com/css-houdini-squircle/squircle.min.js`
+)</script></head><body class="hbox(fill) flex-wrap p(20) gap(20) monospace font(20)"><editor class="squircle-clip w(400~)  flex(1) bg(#0b0e14)"></editor><preview class="clip w(400~) flex(1) p(10) squircle">Hello</preview></body></html>
