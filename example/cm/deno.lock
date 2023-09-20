@@ -1,0 +1,33 @@
+{
+  "version": "2",
+  "remote": {
+    "https://esm.sh/v132/*@codemirror/commands@6.2.5": "d370381022334caaa23729afca537932eb1b1cdb643d3bbaaf2d14dae0ac149e",
+    "https://esm.sh/v132/*@codemirror/view@6.19.0": "53d1720cad1c2b0761dc81a4f57bc8c9c5c55d283f9f506278e8fb69a3597399",
+    "https://esm.sh/v132/*codemirror@6.0.1": "eb2c4108db9cce7fd8b18d654e53b700d0becea1a69ff2c16ba034c0305646af",
+    "https://esm.sh/v132/@codemirror/autocomplete@6.9.1": "9ef2f97d6bab4a7aaf8bd03abeadb5eb6d13fae31eb5d6a2ad2825121f7311c3",
+    "https://esm.sh/v132/@codemirror/autocomplete@6.9.1/denonext/autocomplete.mjs": "4018268dff06a96ed8d112886b4a30c555f372ffd22302e1b87888ed87fe4299",
+    "https://esm.sh/v132/@codemirror/commands@6.2.5/X-ZS8q/denonext/commands.mjs": "448a77bc96219df3bf1df2c9ef367a9f7904d3d27473582bedf48bed0c0e903b",
+    "https://esm.sh/v132/@codemirror/language@6.9.0": "f31ae0bae807732084400d4168ec0d9367ff426d2f1c09d0e2fc9da01adf3c02",
+    "https://esm.sh/v132/@codemirror/language@6.9.0/denonext/language.mjs": "e5da41e8e6937b2848d0b50354913731dde5b228fd813b372c804646940fc57a",
+    "https://esm.sh/v132/@codemirror/lint@6.4.2": "64e4d06e765563807dc2a6673543f34ad3e2a88a0f1d922daefefd9f417fdc31",
+    "https://esm.sh/v132/@codemirror/lint@6.4.2/denonext/lint.mjs": "2380a8cfc7d3cb725bf771d338cb9da1fe640b19a1dd33738a0a0b8fc4ce4f35",
+    "https://esm.sh/v132/@codemirror/search@6.5.3": "453b7213f3dc9406eac31e13bc524a58a79aba1a7e17667b958051a440a4455d",
+    "https://esm.sh/v132/@codemirror/search@6.5.3/denonext/search.mjs": "301522634a22b9da75602e270896422fb9f0aa7e32b4ae234cebc69198fe07b4",
+    "https://esm.sh/v132/@codemirror/state@6.2.1": "a309ca1de20e4063458c0c6401d5c16baa99884c1e59e0682819bdcd7a858783",
+    "https://esm.sh/v132/@codemirror/state@6.2.1/denonext/state.mjs": "33fc4be31149e10d791bc4efc1404f380f3d20f3df5e8f9b92a73e3da592d33c",
+    "https://esm.sh/v132/@codemirror/view@6.19.0/X-ZS8q/denonext/view.mjs": "6875f4ae022df60220730582925e119d54ac695118bf4933ebd01d5a5e9bbf4b",
+    "https://esm.sh/v132/@codemirror/view@6.19.0/denonext/view.mjs": "a730af07ebaf165f4517c2102364556f30d11830afd046ae55ea09d7a57e6c9f",
+    "https://esm.sh/v132/@lezer/common@1.0.4/denonext/common.mjs": "dbb203bd6d4a1679eb6fe53f3dcf2bd2f4dc6fc9d8608fab73369f269c021855",
+    "https://esm.sh/v132/@lezer/common@1.1.0": "da3c319dff5bf2b413c18106df8468e81efa49d4b3f662cce5508ff53224fb20",
+    "https://esm.sh/v132/@lezer/common@1.1.0/denonext/common.mjs": "e981ce8e14b52bc480971d4cc94f9ddbb99ad33802a2716f9e8657e17bd0f3cb",
+    "https://esm.sh/v132/@lezer/highlight@1.1.6/denonext/highlight.mjs": "2969e00db121f95b2f8ffa6fff0ce76ca782f89678102f275aa13476d480acca",
+    "https://esm.sh/v132/codemirror@6.0.1/X-ZS8q/denonext/codemirror.mjs": "11aff7b676174ec10765ac4690163ba5a364b446e682dc01dc114cd1874dc320",
+    "https://esm.sh/v132/crelt@1.0.6/denonext/crelt.mjs": "4fa33d2af0e056de48f60c194d0764bff620fb53f37134a81066f507f00bfffa",
+    "https://esm.sh/v132/css-paint-polyfill@3.4.0": "9b698df4fbed52d0d99fd32b460f42026d339d779f508dff11562550727ff421",
+    "https://esm.sh/v132/css-paint-polyfill@3.4.0/denonext/css-paint-polyfill.mjs": "5601b8e33fcf02bf9bd1f9ccf16fd38d3153cd992c744608d00836a1d4ffd78e",
+    "https://esm.sh/v132/style-mod@4.1.0": "1d66f404818f2be3da330141900eb8c44488dea757efd972ca8c920e9088604f",
+    "https://esm.sh/v132/style-mod@4.1.0/denonext/style-mod.mjs": "ec8966d3907f43a894020603b8c07c77b2fb41908bd48e03ca131cc8ee09cdae",
+    "https://esm.sh/v132/w3c-keyname@2.2.8": "9966a84828f8dcbcd5be36bba66e5982a655ef41752bda8e91249e5d41658ee8",
+    "https://esm.sh/v132/w3c-keyname@2.2.8/denonext/w3c-keyname.mjs": "f17bf439dd5b076d2c16b4ddc8b5cb5c28a427aad157937e4594bb1ab6e770c5"
+  }
+}

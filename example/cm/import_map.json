@@ -1,0 +1,25 @@
+{
+  "imports": {
+    "jsx/jsx-runtime": "../../src/jsx.ts",
+    "@codemirror/commands": "https://esm.sh/v132/*@codemirror/commands@6.2.5",
+    "@codemirror/view": "https://esm.sh/v132/*@codemirror/view@6.19.0",
+    "adorable-css": "https://esm.sh/v132/*adorable-css@1.5.2",
+    "adorable-css/": "https://esm.sh/v132/*adorable-css@1.5.2/",
+    "codemirror": "https://esm.sh/v132/*codemirror@6.0.1",
+    "css-paint-polyfill": "https://esm.sh/v132/css-paint-polyfill@3.4.0",
+    "preact/jsx-runtime": "https://esm.sh/v132/preact@10.17.1/jsx-runtime"
+  },
+  "scopes": {
+    "https://esm.sh/v132/": {
+      "@codemirror/autocomplete": "https://esm.sh/v132/@codemirror/autocomplete@6.9.1",
+      "@codemirror/language": "https://esm.sh/v132/@codemirror/language@6.9.0",
+      "@codemirror/lint": "https://esm.sh/v132/@codemirror/lint@6.4.2",
+      "@codemirror/search": "https://esm.sh/v132/@codemirror/search@6.5.3",
+      "@codemirror/state": "https://esm.sh/v132/@codemirror/state@6.2.1",
+      "@lezer/common": "https://esm.sh/v132/@lezer/common@1.1.0",
+      "style-mod": "https://esm.sh/v132/style-mod@4.1.0",
+      "tsup": "https://esm.sh/v132/tsup@7.2.0",
+      "w3c-keyname": "https://esm.sh/v132/w3c-keyname@2.2.8"
+    }
+  }
+}

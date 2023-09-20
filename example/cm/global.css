@@ -1,0 +1,12 @@
+.squircle {
+    --squircle-smooth: 1;
+    --squircle-radius: 15px;
+    --squircle-outline: 1px;
+    --squircle-fill: black;
+    background: paint(squircle);
+}
+.squircle-clip {
+    --squircle-smooth: 1;
+    --squircle-radius: 15px;
+    mask-image: paint(squircle);
+}
