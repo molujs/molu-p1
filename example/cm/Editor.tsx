@@ -3,7 +3,7 @@ export const Editor = () =>
     <head>
         <m:importMap src="./import_map.json"/>
         <m:use raw src="./src/cmInit.js"/>
-        <m:use src="./src/global.css"/>
+        <m:use raw src="./src/global.css"/>
         <m:use raw src="./src/useSquircle.js"/>
     </head>
     <body class="hbox(fill) flex-wrap p(20) gap(20) monospace font(20)">

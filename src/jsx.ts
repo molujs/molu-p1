@@ -35,21 +35,23 @@ type Factory<T> =
             }
             if (tag =="m:use") {
                 if (att.src.endsWith(".css")) {
+                    if (att.raw) {
+                        return ``
+                            +`<style>`
+                            +Deno.readTextFileSync(att.src)
+                            +`</style>`
+                    }
                     return ``
                         +`<link rel="stylesheet" `
                         +`href="${att.src}" `
                         +`type="text/css"></link>`
                 }
-                if (att.raw) {
-                    return ``
-                        +`<script type="module">`
-                        +Deno.readTextFileSync(att.src)
-                        +`</script>`
-                }
                 return ``
                     +`<script type="module" `
-                    +`src="${att.src}"`
-                    +`></script>`
+                    + (att.raw
+                        ? (">"+Deno.readTextFileSync(att.src))
+                        : `src="${att.src}">`)
+                    +`</script>`
             }
             let { children } = att
             if (!children) children = []

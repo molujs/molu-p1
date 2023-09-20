@@ -22,7 +22,7 @@
       "w3c-keyname": "https://esm.sh/v132/w3c-keyname@2.2.8"
     }
   }
-}</script><script type="module">import { basicSetup } from "codemirror"
+}</script><script type="module" >import { basicSetup } from "codemirror"
 import { EditorView, keymap } from "@codemirror/view"
 import { indentWithTab } from "@codemirror/commands"
 
@@ -43,8 +43,18 @@ const editor = new EditorView({
     parent: document.querySelector("editor"),
 })
 
-import "adorable-css"
-</script><link rel="stylesheet" href="./src/global.css" type="text/css"></link><script type="module">if (!("paintWorklet" in CSS)) {
+import "adorable-css"</script><style>.squircle {
+    --squircle-smooth: 1;
+    --squircle-radius: 15px;
+    --squircle-outline: 1px;
+    --squircle-fill: black;
+    background: paint(squircle);
+}
+.squircle-clip {
+    --squircle-smooth: 1;
+    --squircle-radius: 15px;
+    mask-image: paint(squircle);
+}</style><script type="module" >if (!("paintWorklet" in CSS)) {
     await import("css-paint-polyfill")
 }
 
