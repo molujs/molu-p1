@@ -9,7 +9,7 @@ MoluJS Prototype #1
         "jsxImportSource": "jsx"
     },
     "imports": {
-        "jsx/jsx-runtime": "https://deno.land/x/molu-p1/mod.ts"
+        "jsx/jsx-runtime": "https://deno.land/x/molu_p1/mod.ts"
     }
 }
 ```
